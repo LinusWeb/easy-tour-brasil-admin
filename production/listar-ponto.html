@@ -65,7 +65,7 @@
                       <li><a href="cadastrar-ponto.html">Novo Ponto</a></li>
                       <li><a href="listar-ponto.html">Listar Pontos</a></li>
                       <li><a href="cadastrar-categoria-ponto.html">Nova Categoria de Pontos</a></li>
-                      <li><a href="listar-categoria-ponto.html">Listar Categoria de Pontos</a></li>								  
+                      <li><a href="listar-categoria-ponto.html">Listar Categoria de Pontos</a></li>							  
                     </ul>
                   </li>	
                   <li><a><i class="fa fa-road"></i> Roteiros Turísticos <span class="fa fa-chevron-down"></span></a>
@@ -230,7 +230,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Cadastrar Ponto Turístico</h3>
+                <h3>Listar Pontos Turísticos</h3>
               </div>
             </div>
 			
@@ -239,16 +239,21 @@
 			<br />
 
             <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="col-md-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Informações do Ponto </h2>
+                    <h2>Informações do Ponto</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
                       </li>
@@ -257,92 +262,53 @@
                   </div>
                   <div class="x_content">
 
-                    <form class="form-horizontal form-label-left" novalidate>
 
-                      <div class="item form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome <span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="nome" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="nome" required="required" type="text">
-                        </div>
-                      </div>
-					  
-                      <div class="item form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Descrição <span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <textarea id="textarea" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="textarea" required="required" type="text"></textarea>
-                        </div>
-                      </div>
-					  
-                      <div class="item form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="latitude">Latitude <span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="latitude" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="latitude" required="required" type="text">
-                        </div>
-                      </div>					  
+                    <!-- start project list -->
+                    <table class="table table-striped projects">
+                      <thead>
+                        <tr>
+                          <th style="width: 1%">#</th>
+                          <th style="width: 20%">Nome</th>
+                          <th>Descrição</th>
+                          <th style="width: 20%">Ações</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>#</td>
+                          <td>
+                            <a>Fortaleza dos Reis Magos</a></td>
+                          <td>
+                            <ul class="list-inline">
+                              <li>O Forte dos Reis Magos é uma edificação militar histórica localizada na cidade de Natal. </li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                          </td>
+                          <td>
+                            <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
+                            <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Deletar </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>#</td>
+                          <td>
+                          <a>Fundação Capitania das Artes</a></td>
+                          <td>
+                            <ul class="list-inline">
+                              <li>Seu prédio foi sede do Governo do Estado, da Escola de Aprendizes de Marinheiro e da Capitania dos Portos.</li>
+                              <li></li>
+                          </ul></td>
+                          <td>
+                            <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Editar </a>
+                            <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Deletar </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- end project list -->
 
-                      <div class="item form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="longitude">Longitude <span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="longitude" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="longitude" required="required" type="text">
-                        </div>
-                      </div>	
-
-                      <div class="item form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="cidade">Cidade <span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="cidade" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="cidade" required="required" type="text">
-                        </div>
-                      </div>
-
-                      <div class="item form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Estado <span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="estado" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="estado" required="required" type="text">
-                        </div>
-                      </div>
-
-                      <div class="item form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="pais">País <span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="pais" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="pais" required="required" type="text">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Categoria <span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <select class="form-control">
-                            <option>  </option>
-                            <option>Biblioteca</option>
-                            <option>Cinema</option>
-                            <option>Faculdade</option>
-                            <option>Galeria de arte</option>
-                            <option>Igreja</option>
-                            <option>Lagoa</option>
-                            <option>Loja de artesanato</option>								
-                            <option>Monumento histórico</option>	                            
-							<option>Museu</option>							
-                            <option>Parque</option>		
-                            <option>Praia</option>	
-                            <option>Praça</option>	
-                            <option>Museu</option>	
-                            <option>Shopping center</option>	
-                            <option>Supermercado</option>
-                            <option>Teatro</option>	
-                          </select>
-                        </div>
-                      </div>
-					  
-                      <div class="ln_solid"></div>
-					  
-                      <div class="form-group">
-                        <div class="col-md-6 col-md-offset-3">
-                          <button type="submit" class="btn btn-primary">Cancelar</button>
-                          <button id="send" type="submit" class="btn btn-success">Enviar</button>
-                        </div>
-                      </div>
-					  
-                    </form>
                   </div>
                 </div>
               </div>
